@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RUBLpedia | Explore Beyond Language</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Auto redirect after 5 seconds 
+  <meta http-equiv="refresh" content="15;url=https://www.figma.com/make/hSm2XoIhkQpOzlwEHQDg2c/Design-RUBLpedia-Website?p=f&t=izk2rVj8J3dg4bfk-0">
+-->
+  <style>
+    :root {
+      --primary: #4caf50;
+      --secondary: #2e7d32;
+      --dark: #1b1b1b;
+      --light: #f9f9f9;
+      --gradient: linear-gradient(135deg, #81c784, #388e3c);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--gradient);
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      background: var(--light);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      padding: 40px;
+      text-align: center;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    h1 span {
+      color: var(--secondary);
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+    }
+
+    .feature {
+      background: var(--primary);
+      color: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .feature p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      background: var(--secondary);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="RUBLpedia Logo" class="logo" />
+    <h1>Welcome to <span>RUBLpedia</span></h1>
+    <p class="tagline">The Language of Climate Series.</p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Global Reach</h3>
+        <p>Understand the nature well with our translation tool.</p>
+      </div>
+      <div class="feature">
+        <h3>Climate</h3>
+        <p>When language disappears, the climate speaks clearly..</p>
+      </div>
+      <div class="feature">
+        <h3>Community Driven</h3>
+        <p>Join a global community of language enthusiasts and experts.</p>
+      </div>
+    </div>
+
+     <div class="cta">
+      <a href="https://www.figma.com/make/hSm2XoIhkQpOzlwEHQDg2c/Design-RUBLpedia-Website?p=f&t=izk2rVj8J3dg4bfk-0">Explore More</a>
+    </div> 
+  </div>
+</body>
+</html>
